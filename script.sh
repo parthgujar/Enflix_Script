@@ -17,7 +17,7 @@ cd /media/ads
 wget https://github.com/parthgujar/random-files/raw/master/homepage%20video.mp4
 sleep 30
 
-
+mkdir /media/usb
 
 
 
