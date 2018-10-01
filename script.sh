@@ -30,5 +30,4 @@ echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo deb
 # bro put this command and click yes when it asks amything 
 
 
-reboot
  
