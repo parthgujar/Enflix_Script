@@ -19,17 +19,15 @@ wget https://github.com/parthgujar/random-files/raw/master/homepage%20video.mp4
 sleep 30
 
 
-#emby data
-wget https://github.com/parthgujar/Enflix_Script/raw/master/backup.zip
-unzip backup.zip
-cp -f -r backup/emby /var/lib
+
 
 
 #iptables
 iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8096
 echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo debconf-set-selections
 echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo debconf-set-selections
-apt-get -y install iptables-persistent
+#apt-get -y install iptables-persistent
+# bro put this command and click yes when it asks amything 
 
 
 reboot
