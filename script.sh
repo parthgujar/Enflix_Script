@@ -9,7 +9,6 @@ wget https://github.com/MediaBrowser/Emby.Releases/releases/download/3.5.2.0/emb
 dpkg -i emby-server-deb_3.5.2.0_armhf.deb
 if (( $? )); then
 	apt-get -f -y install
-	exit 1
 fi
 
 #ads
