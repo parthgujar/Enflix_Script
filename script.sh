@@ -26,7 +26,7 @@ sudo service network-manager restart
 
 #installing dnsmasq and configuring it 
 cd /etc/
-sudo apt-get install dnsmasq
+sudo apt-get -y install dnsmasq
 wget -o https://raw.githubusercontent.com/parthgujar/Enflix_Script/master/dnsmasq.conf
 
 
