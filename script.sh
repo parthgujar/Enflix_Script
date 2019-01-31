@@ -26,14 +26,24 @@ sudo service network-manager restart
 
 #installing dnsmasq and configuring it 
 cd /etc/
-wget 
+sudo apt-get install dnsmasq
+wget -o https://raw.githubusercontent.com/parthgujar/Enflix_Script/master/dnsmasq.conf
 
 
+#jiofi tethering
+cd
+cd /etc/network
+wget -o https://raw.githubusercontent.com/parthgujar/Enflix_Script/master/interfaces
 
+
+#port config
 iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8096
 echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo debconf-set-selections
 echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo debconf-set-selections
 apt-get -y install iptables-persistent
+
+
+reboot
 
 
  
