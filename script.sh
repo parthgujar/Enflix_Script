@@ -6,9 +6,9 @@ apt-get -y install exfat-utils exfat-fuse git wget iptables usbmount
 
 #emby
 wget https://github.com/MediaBrowser/Emby.Releases/releases/download/4.0.1.0/emby-server-deb_4.0.1.0_armhf.deb
-dpkg -i emby-server-deb_4.0.1.0_arm64.deb
+dpkg -i emby-server-deb_4.0.1.0_armhf.deb
 apt-get -f -y install
-dpkg -i emby-server-deb_4.0.1.0_arm64.deb
+dpkg -i emby-server-deb_4.0.1.0_armhf.deb
 
 #ads setup
 mkdir /media/ads
