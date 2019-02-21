@@ -44,7 +44,7 @@ rm /etc/resolv.conf
 sudo service network-manager restart
 
 
-
+echo " sleeping for 30 seconds. please connect the usb dongle to Rock64 "
 
 #at this point, connect the usb dongle to the rock as well
 sleep 30
@@ -66,7 +66,7 @@ rm -rf interfaces
 wget https://raw.githubusercontent.com/parthgujar/Enflix_Script/master/interfaces
 
 
-
+echo " Script has completed sucessfully. The system is shutting down now. Please connect the the system ethernet port to the Netgear router Lan port and ensure that usb dongle is connected before restarting"
 
 #at this point system will go into sleep. now is a good time to connect the ethernet cable to the netgear 'ENFLIX' router. note it is imperitive to have dhcp disabled in router settings 
 shutdown now
