@@ -69,8 +69,7 @@ wget https://raw.githubusercontent.com/parthgujar/Enflix_Script/master/interface
 
 
 #at this point system will go into sleep. now is a good time to connect the ethernet cable to the netgear 'ENFLIX' router. note it is imperitive to have dhcp disabled in router settings 
-sleep 30
-reboot
+shutdown now
 
 
 
