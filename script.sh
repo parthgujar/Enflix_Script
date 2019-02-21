@@ -2,13 +2,13 @@
 apt-get -y update
 apt-get -y upgrade
 apt-get -y dist-upgrade
-apt-get -y install exfat-utils exfat-fuse git wget iptables usbmount
+apt-get -y install exfat-utils exfat-fuse git wget iptables 
 
 #emby
-wget https://github.com/MediaBrowser/Emby.Releases/releases/download/4.0.1.0/emby-server-deb_4.0.1.0_armhf.deb
-dpkg -i emby-server-deb_4.0.1.0_armhf.deb
+wget https://github.com/MediaBrowser/Emby.Releases/releases/download/4.0.2.0/emby-server-deb_4.0.2.0_armhf.deb
+dpkg -i emby-server-deb_4.0.2.0_armhf.deb
 apt-get -f -y install
-dpkg -i emby-server-deb_4.0.1.0_armhf.deb
+dpkg -i emby-server-deb_4.0.2.0_armhf.deb
 
 #ads setup
 mkdir /media/ads
@@ -16,6 +16,7 @@ cd /media/ads
 wget https://github.com/parthgujar/random-files/raw/master/homepage%20video.mp4
 sleep 30
 mkdir /media/usb
+mount /dev/sda1 /media/usb
 
 #disabling systemctl for installing dnsmasq
 cd 
