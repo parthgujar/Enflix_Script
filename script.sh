@@ -32,6 +32,7 @@ sudo systemctl disable systemd-resolved.service
 sudo systemctl stop systemd-resolved
 rm /etc/resolv.conf
 sudo service network-manager restart
+sleep 30
 
 #at this point, connect the usb dongle to the rock as well
 
