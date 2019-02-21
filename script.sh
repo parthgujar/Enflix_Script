@@ -1,5 +1,5 @@
 
-# At this point ensure that rockpi has ethernet, power and usb only connected. 
+# At this point ensure that rockpi has ethernet connected to a router with internet, power and usb only connected. 
 #complete the initial setup, default password is 1234 setup new password as ghanta123
 # promt will make you create a user, name him enflix, then prompt will ask for full name etc, just hit enter till it asks you a confirmation of 'y/n ?'
 # once you have shell access, just execute the script
