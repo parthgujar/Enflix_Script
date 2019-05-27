@@ -47,7 +47,7 @@ sudo service network-manager restart
 echo " sleeping for 30 seconds. please connect the usb dongle to Rock64 "
 
 #at this point, connect the usb dongle to the rock as well
-sleep 30
+sleep 120
 
 
 
