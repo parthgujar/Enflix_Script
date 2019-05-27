@@ -66,6 +66,13 @@ rm -rf interfaces
 wget https://raw.githubusercontent.com/parthgujar/Enflix_Script/master/interfaces
 
 
+iptables -A PREROUTING -t nat -i eth0 -p tcp --dport 80 -j REDIRECT --to-port 8096
+echo iptables-persistent iptables-persistent/autosave_v4 boolean true | sudo debconf-set-selections
+echo iptables-persistent iptables-persistent/autosave_v6 boolean true | sudo debconf-set-selections
+apt-get -y install iptables-persistent
+
+
+
 echo " Script has completed sucessfully. The system is shutting down now. Please connect the the system ethernet port to the Netgear router Lan port and ensure that usb dongle is connected before restarting"
 
 #at this point system will go into sleep. now is a good time to connect the ethernet cable to the netgear 'ENFLIX' router. note it is imperitive to have dhcp disabled in router settings 
